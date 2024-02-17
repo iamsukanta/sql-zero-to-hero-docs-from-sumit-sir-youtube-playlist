@@ -39,3 +39,26 @@ Practice SQL query with MySQL Database:
 `SHOW DATABASES;`
 - this command gives you list of databases which are already present.
 ![show databases](show-databases.png)
+
+`CREATE DATABASE trendytech;`
+- by this command you can create a new database, here database name `trendytech`.
+
+`DROP DATABASE trendytech`
+- by this command you can delete specific database, here I deleted `trendytech` database.
+
+`USE trendytech;`
+- by this command you will connect with certain database, here I used `treandytech` database.
+
+`SELECT DATABASE();`
+- by this command you will know in which database you are connected.
+
+```
+CREATE TABLE employee
+(
+  name,
+  age,
+  salary
+);
+```
+
+
