@@ -21,7 +21,7 @@ There are two types of database. These are:
 ### NoSQL Database
 ----------------------
 - consists of key, value pair or document basis or graph basis or etc.
-- no tables.
+- no relation between tables.
 - examples are Hbase, MongoDB, Cassandra, etc.
 - each database has own language to interact with NoSQL database.
 
@@ -38,7 +38,7 @@ Practice SQL query with MySQL Database:
 
 `SHOW DATABASES;`
 - this command gives you list of databases which are already present.
-![show databases](show-databases.png)
+![show databases](images/session1/show_databases.png))
 
 `CREATE DATABASE trendytech;`
 - by this command you can create a new database, here database name `trendytech`.
@@ -69,3 +69,20 @@ CREATE TABLE employee
 `DESCRIBE employee;` or `DESC employee;`
 - this command is used for describing or showing a table structure.
 ![describe employee table](images/session1/describe_employee.png)
+
+`DROP TABLE employee`
+- this command will delete `employee` table.
+
+**If you drop connected database and want to create a table, you will get a error because you are not connected to any database. This is expected becuse you should be connected to any database to create tables.**
+
+**If you are not connected to any database and want to create tables you have to explicitely defined database name like below example.**
+
+```
+CREATE TABLE trendytech.employee
+(
+  name VARCHAR(50),
+  age INT,
+  salary INT
+);
+```
+- here `trendytech` is database name and `employee` is table name.
