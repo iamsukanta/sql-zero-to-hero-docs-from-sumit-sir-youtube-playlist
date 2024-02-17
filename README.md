@@ -47,7 +47,7 @@ Practice SQL query with MySQL Database:
 - by this command you can delete specific database, here I deleted `trendytech` database.
 
 `USE trendytech;`
-- by this command you will connect with certain database, here I used `treandytech` database.
+- by this command you will connect with certain database, here I used `trendytech` database.
 
 `SELECT DATABASE();`
 - by this command you will know in which database you are connected.
@@ -55,10 +55,17 @@ Practice SQL query with MySQL Database:
 ```
 CREATE TABLE employee
 (
-  name,
-  age,
-  salary
+  name VARCHAR(50),
+  age INT,
+  salary INT
 );
 ```
+- this command creates a new table inside a connected database. Here, table name is `employee` and database name is `trendytech`.
+- `VARCHAR` and `INT` are two datatypes from many datatypes. `VARCHAR` is used for `string` and `INT` is used for `numeric`.
 
+`SHOW TABLES;`
+- this command is used for list of tables of connected database.
 
+`DESCRIBE employee;` or `DESC employee;`
+- this command is used for describing or showing a table structure.
+![describe employee table](images/session1/describe_employee.png)
