@@ -98,3 +98,19 @@ create - delete statements
 
 ```
 
+Let's start with fresh `employee` table by deleting previous one. Create `employee` table by this command.
+
+```
+CREATE TABLE employee
+(
+  firstname VARCHAR(20),
+  middlename VARCHAR(20),
+  lastname VARCHAR(20),
+  age INT,
+  salary INT,
+  location VARCHAR(20)
+);
+```
+To see the structure of this table. Please give below command.
+`DESC employee;`
+![employee table structure](images/session2/employee_table.png)
