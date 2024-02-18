@@ -114,3 +114,7 @@ CREATE TABLE employee
 To see the structure of this table. Please give below command.
 `DESC employee;`
 ![employee table structure](images/session2/employee_table.png)
+
+`SELECT * FROM employee;`
+- this command is used for to show all data from `employee` table.
+- here `*` means all data
