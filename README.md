@@ -118,3 +118,9 @@ To see the structure of this table. Please give below command.
 `SELECT * FROM employee;`
 - this command is used for to show all data from `employee` table.
 - here `*` means all data
+
+Now, we want to insert some data inside this `employee` table. Let's use this command.
+
+`INSERT INTO employee VALUES ('kapil', 'kumar', 'sharma', 30, 30000, 'bangalore');`
+- by this command you can insert data.
+But it is recommended. Recommended approach is always mention column name after table name. Otherwise, you will get error if column count and value does not match.
