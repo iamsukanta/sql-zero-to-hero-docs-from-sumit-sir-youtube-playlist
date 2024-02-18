@@ -86,3 +86,15 @@ CREATE TABLE trendytech.employee
 );
 ```
 - here `trendytech` is database name and `employee` is table name.
+
+# Learn SQL the right way - Session 2
+
+**CRUD - Operations**
+```
+create - insert statements
+read - select statements
+create - update statements
+create - delete statements
+
+```
+
