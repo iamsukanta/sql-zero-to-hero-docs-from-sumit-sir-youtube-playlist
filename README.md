@@ -142,3 +142,6 @@ If you want to insert value with single quote or double quote you have to give w
 ```
 "rajesh's" or 'rajesh"s' or 'rajesh\'s'
 ```
+
+For inserting multiple values you can give below command.
+`INSERT INTO employee(firstname, lastname, age, salary, location) VALUES ('rajesh', 'sharma', 32 , 30000, 'bangalore'), ('rakesh', 'bala', 40 , 90000, 'bangalore') ;`
