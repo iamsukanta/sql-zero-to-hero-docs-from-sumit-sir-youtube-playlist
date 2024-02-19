@@ -129,5 +129,11 @@ But it is recommended. Recommended approach is always mention column name after 
 
 If you want to skip one column then you can give like this command.
 
-`INSERT INTO employee(firstname, lastname, age, salary, location) VALUES ('kapil', 'sharma', 30, 30000, 'bangalore');`
+`INSERT INTO employee(firstname, lastname, age, salary, location) VALUES ('rajesh', 'sharma', 32 , 30000, 'bangalore');`
 - here `middlename` column we have skipped and so `middlename` value will be `NULL`.
+- `NULL` value basically `undefined`.
+
+If you skip any column then you should mention column name, otherwise you have to insert all column data. Look at this command:
+
+`INSERT INTO employee VALUES ('rajesh', 'sharma', 32 , 30000, 'bangalore');`
+- you will get error (column count doesn't match value count) because you skip `middlename` column but you don't mention column name.
