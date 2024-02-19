@@ -124,3 +124,10 @@ Now, we want to insert some data inside this `employee` table. Let's use this co
 `INSERT INTO employee VALUES ('kapil', 'kumar', 'sharma', 30, 30000, 'bangalore');`
 - by this command you can insert data.
 But it is recommended. Recommended approach is always mention column name after table name. Otherwise, you will get error if column count and value does not match.
+
+`INSERT INTO employee(firstname, middlename, lastname, age, salary, location) VALUES ('kapil', 'kumar', 'sharma', 30, 30000, 'bangalore');`
+
+If you want to skip one column then you can give like this command.
+
+`INSERT INTO employee(firstname, lastname, age, salary, location) VALUES ('kapil', 'sharma', 30, 30000, 'bangalore');`
+- here `middlename` column we have skipped and so `middlename` value will be `NULL`.
