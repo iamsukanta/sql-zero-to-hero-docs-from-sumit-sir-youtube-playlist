@@ -1,10 +1,14 @@
 This is a SQL tutorial which is based on Sumit Sir youtube playlist. I think this will be very helpful who wants to learn SQL genuinely and effective way.
 
-[Getting started with SQL - Session 1](#getting-started-with-sql-session-1)
+[1. Getting started with SQL - Session 1](#getting-started-with-sql-session-1)
 
-[Learn SQL the right way - Session 2](#learn-sql-the-right-way-session-2)
+[2. Learn SQL the right way - Session 2](#learn-sql-the-right-way-session-2)
 
-### Getting started with SQL - Session 1
+[3. Learn SQL the right way - Session 3](#learn-sql-the-right-way-session-3)
+
+[4. Learn SQL the right way - Session 4](#learn-sql-the-right-way-session-4)
+
+# Getting started with SQL: Session 1
 ### What is database?
 - a collection of data and holds this data in the form of tables.
 ### what is table?
@@ -91,10 +95,10 @@ CREATE TABLE trendytech.employee
 ```
 - here `trendytech` is database name and `employee` is table name.
 
-### Learn SQL the right way - Session 2
+# Learn SQL the right way: Session 2
 
 **CRUD - Operations**
-```
+```Learn SQL the right way - Session 2
 create - insert statements
 read - select statements
 create - update statements
@@ -151,13 +155,13 @@ For inserting multiple values you can give below command.
 `INSERT INTO employee(firstname, lastname, age, salary, location) VALUES ('rajesh', 'sharma', 32 , 30000, 'bangalore'), ('rakesh', 'bala', 40 , 90000, 'bangalore') ;`
 
 
-# Learn SQL the right way - Session 3
+# Learn SQL the right way: Session 3
 
 PRIMARY KEY
 UNIQUE KEY
 NOT NULL
 
-# Learn SQL the right way - Session 4
+# Learn SQL the right way: Session 4
 
 UPDATE
 DELETE
