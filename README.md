@@ -137,3 +137,8 @@ If you skip any column then you should mention column name, otherwise you have t
 
 `INSERT INTO employee VALUES ('rajesh', 'sharma', 32 , 30000, 'bangalore');`
 - you will get error (column count doesn't match value count) because you skip `middlename` column but you don't mention column name.
+
+If you want to insert value with single quote or double quote you have to give wrap quote with another quote. Or, you can use escape(\) character.
+```
+"rajesh's" or 'rajesh"s' or 'rajesh\'s'
+```
