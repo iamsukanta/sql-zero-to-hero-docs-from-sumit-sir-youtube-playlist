@@ -196,7 +196,9 @@ CREATE TABLE employee
 ```
 - here, if you do not insert location value, it automatically insert `bangalore` as a location value.
 
-We can manually insert value as a `NULL`.
+We can manually insert value as a `NULL` for a default value column like this.
+`INSERT INTO employee(firstname, lastname, age, salary, location) VALUES ('rakesh', 'sharma', 40 , 90000, NULL) ;`
+- here, we explicitly set `location` value as a `NULL`. 
 
 # Learn SQL the right way: Session 3
 
