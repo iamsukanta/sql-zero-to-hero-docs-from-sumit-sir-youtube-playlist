@@ -154,6 +154,28 @@ If you want to insert value with single quote or double quote you have to give w
 For inserting multiple values you can give below command.
 `INSERT INTO employee(firstname, lastname, age, salary, location) VALUES ('rajesh', 'sharma', 32 , 30000, 'bangalore'), ('rakesh', 'bala', 40 , 90000, 'bangalore') ;`
 
+If you insert wrong data type like, here `age` is `integer` data tpe if you give `string` data type you will get error.
+
+If you insert more character than you defined then you will also get error like, here if `firstname` column is defined `varchar(20)` and if you entered more than 20 character you will also get error.
+
+`NULL`
+- is a specially value which is unknown or undefined.
+  
+If you want to restrict one column that cannot be `NULL` then we have to mention `NOT NULL` property when we will create or declare a table like this.
+
+```
+CREATE TABLE employee
+(
+  firstname VARCHAR(20) NOT NULL,
+  middlename VARCHAR(20),
+  lastname VARCHAR(20) NOT NULL,
+  age INT NOT NULL,
+  salary INT NOT NULL,
+  location VARCHAR(20) NOT NULL
+);
+```
+- here, you can insert only `middlename` column `NULL` but other columns must inclue value you cannot set empty or `NULL` value.
+
 
 # Learn SQL the right way: Session 3
 
