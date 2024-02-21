@@ -191,7 +191,7 @@ CREATE TABLE employee
   lastname VARCHAR(20) NOT NULL,
   age INT NOT NULL,
   salary INT NOT NULL,
-  location VARCHAR(20) NOT NULL DEFAULT 'bangalore'
+  location VARCHAR(20) DEFAULT 'bangalore'
 );
 ```
 - here, if you do not insert location value, it automatically insert `bangalore` as a location value.
@@ -202,9 +202,32 @@ We can manually insert value as a `NULL` for a default value column like this.
 
 # Learn SQL the right way: Session 3
 
+Agenda:
 PRIMARY KEY
+AUTO INCREMENT KEYS
 UNIQUE KEY
-NOT NULL
+PRIMARY KEYS vs UNIQUE KEYS
+
+**PRIMARY KEY:**
+- used for uniquely identify a row from database.
+- cannot be `NULL`.
+- does not allows duplicates value.
+
+By below structure `PRIMARY KEY` can be defined 
+
+ ```
+CREATE TABLE employee
+(
+  id INT PRIMARY KEY,
+  firstname VARCHAR(20) NOT NULL,
+  middlename VARCHAR(20),
+  lastname VARCHAR(20) NOT NULL,
+  age INT NOT NULL,
+  salary INT NOT NULL,
+  location VARCHAR(20) NOT NULL DEFAULT 'bangalore'
+);
+```
+- here `id` column is primary key
 
 # Learn SQL the right way: Session 4
 
