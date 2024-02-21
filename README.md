@@ -176,6 +176,9 @@ CREATE TABLE employee
 ```
 - here, you can insert only `middlename` column `NULL` but other columns must inclue value you cannot set empty or `NULL` value.
 
+We can see the structure of this table by entering `DESC employee` command.
+
+![Employee Table Structure](images/session2/employee_table_structure.png)
 
 # Learn SQL the right way: Session 3
 
