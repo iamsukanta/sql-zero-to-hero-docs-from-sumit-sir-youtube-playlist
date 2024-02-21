@@ -226,8 +226,47 @@ CREATE TABLE employee
   salary INT NOT NULL,
   location VARCHAR(20) NOT NULL DEFAULT 'bangalore'
 );
+
+OR
+
+CREATE TABLE employee
+(
+  id INT,
+  firstname VARCHAR(20) NOT NULL,
+  middlename VARCHAR(20),
+  lastname VARCHAR(20) NOT NULL,
+  age INT NOT NULL,
+  salary INT NOT NULL,
+  location VARCHAR(20) NOT NULL DEFAULT 'bangalore',
+  PRIMARY KEY(id)
+);
+
 ```
-- here `id` column is primary key
+- here `id` column is a primary key
+
+Sometimes `PRIMARY KEY` can be created by the combination of two columns.
+
+**AUTO INCREMENT**
+- this command automatically increment value
+- very good candidate for `PRIMARY KEY`
+- prevent duplication since it automatically increment values.
+
+By below structure `PRIMARY KEY` can be defined 
+
+ ```
+CREATE TABLE employee
+(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  firstname VARCHAR(20) NOT NULL,
+  middlename VARCHAR(20),
+  lastname VARCHAR(20) NOT NULL,
+  age INT NOT NULL,
+  salary INT NOT NULL,
+  location VARCHAR(20) NOT NULL DEFAULT 'bangalore'
+);
+```
+
+
 
 # Learn SQL the right way: Session 4
 
