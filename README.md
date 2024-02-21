@@ -180,6 +180,24 @@ We can see the structure of this table by entering `DESC employee` command.
 
 ![Employee Table Structure](images/session2/employee_table_structure.png)
 
+**DEFAULT VALUES**
+If you want to give `DEFAULT`value of one column you have to give default value when we will create or declare a table like this.
+
+```
+CREATE TABLE employee
+(
+  firstname VARCHAR(20) NOT NULL,
+  middlename VARCHAR(20),
+  lastname VARCHAR(20) NOT NULL,
+  age INT NOT NULL,
+  salary INT NOT NULL,
+  location VARCHAR(20) NOT NULL DEFAULT 'bangalore'
+);
+```
+- here, if you do not insert location value, it automatically insert `bangalore` as a location value.
+
+We can manually insert value as a `NULL`.
+
 # Learn SQL the right way: Session 3
 
 PRIMARY KEY
