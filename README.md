@@ -298,6 +298,37 @@ CREATE TABLE employee
 # Learn SQL the right way: Session 4
 
 UPDATE
+
 DELETE
+
 DDL VS DML
+
 TRUNCATE VS DELETE
+
+CRUD Operations
+---------------------------------------
+CREATE - INSERT
+READ - SELECT
+UPDATE - UPDATE
+DELETE - DELETE
+
+If you want to read all columns then if you have to give below command.
+`SELECT * FROM employee;`
+- here, `*` means getting all columns from `employee` table.
+
+If you want to get specific column you have to specify column name like this.
+`SELECT firstname, lastname FROM employee`
+- by this command you will get only firstname and lastname column from `employee` name.
+
+**WHERE CLAUSE**
+- `WHERE` clause is used for filtering `rows` based on condition.
+
+For instace, if you want to see the employee list whose employee age is greater than 20, then you have to give this below command.
+
+`SELECT * FROM employee WHERE age > 20;`
+- It will give the employee list whose age is greater than 20.
+
+Another example is:
+
+`SELECT * FROM employee WHERE firstname='maneesh'`
+- It will give the employee list whose firstname is `maneesh`;
