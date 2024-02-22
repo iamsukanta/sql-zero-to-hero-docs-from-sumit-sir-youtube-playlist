@@ -332,3 +332,10 @@ Another example is:
 
 `SELECT * FROM employee WHERE firstname='maneesh'`
 - It will give the employee list whose firstname is `maneesh`;
+
+By default it is case insensitive. Since you have given firstname as `maneesh` you can get firstname `Maneesh` also.
+
+If you want to do it will be case sensitive then you have to add `binary` keyword after `WHERE` clause like this.
+
+`SELECT * FROM employee WHERE binary firstname='maneesh'`
+- now, you will get only such whose firstname is exactly `maneesh`.
