@@ -212,6 +212,7 @@ PRIMARY KEYS vs UNIQUE KEYS
 - used for uniquely identify a row from database.
 - cannot be `NULL`.
 - does not allows duplicates value.
+- you can have only one primary key.
 
 By below structure `PRIMARY KEY` can be defined 
 
@@ -251,7 +252,7 @@ Sometimes `PRIMARY KEY` can be created by the combination of two columns.
 - very good candidate for `PRIMARY KEY`
 - prevent duplication since it automatically increment values.
 
-By below structure `PRIMARY KEY` can be defined 
+By below structure `AUTO INCREMENT` can be defined 
 
  ```
 CREATE TABLE employee
@@ -265,6 +266,14 @@ CREATE TABLE employee
   location VARCHAR(20) NOT NULL DEFAULT 'bangalore'
 );
 ```
+
+**UNIQUE KEY**
+- cannot hold duplicate values like primary key.
+- but, unique key can hold `NULL` value.
+
+How many `NULL` values can hold `UNIQUE KEY`?
+- it depends on database.
+- for example, in MySQL an unique key can hold any number of NULL values but some of other databases it holds only one NULL values.
 
 
 
