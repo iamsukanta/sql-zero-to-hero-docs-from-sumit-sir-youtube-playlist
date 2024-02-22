@@ -263,18 +263,35 @@ CREATE TABLE employee
   lastname VARCHAR(20) NOT NULL,
   age INT NOT NULL,
   salary INT NOT NULL,
-  location VARCHAR(20) NOT NULL DEFAULT 'bangalore'
+  location VARCHAR(20) DEFAULT 'bangalore'
 );
 ```
 
 **UNIQUE KEY**
 - cannot hold duplicate values like primary key.
 - but, unique key can hold `NULL` value.
+- purpose of unique key is to make sure the values do not duplicate.
+- more than one column can be defined as a `UNIQUE KEY` where there is only one `PRIMARY KEY` in a table but it can be constitue by the combination of two columns.
 
 How many `NULL` values can hold `UNIQUE KEY`?
 - it depends on database.
 - for example, in MySQL an unique key can hold any number of NULL values but some of other databases it holds only one NULL values.
 
+By below structure `UNIQUE KEY` can be defined 
+ ```
+CREATE TABLE employee
+(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  firstname VARCHAR(20) NOT NULL,
+  middlename VARCHAR(20),
+  lastname VARCHAR(20) NOT NULL,
+  email VARCHAR(30) UNIQUE KEY,
+  phone VARCHAR(30) UNIQUE KEY,
+  age INT NOT NULL,
+  salary INT NOT NULL,
+  location VARCHAR(20) DEFAULT 'bangalore'
+);
+```
 
 
 # Learn SQL the right way: Session 4
