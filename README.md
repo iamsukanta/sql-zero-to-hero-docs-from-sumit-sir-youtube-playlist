@@ -271,6 +271,7 @@ CREATE TABLE employee
 - cannot hold duplicate values like primary key.
 - but, unique key can hold `NULL` value.
 - purpose of unique key is to make sure the values do not duplicate.
+- `UNIQUE KEY` also can be defined combination of two columns as like as `PRIMARY KEY`.
 - more than one column can be defined as a `UNIQUE KEY` where there is only one `PRIMARY KEY` in a table but it can be constitue by the combination of two columns.
 
 How many `NULL` values can hold `UNIQUE KEY`?
