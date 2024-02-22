@@ -313,6 +313,7 @@ UPDATE - UPDATE
 DELETE - DELETE
 
 If you want to read all columns then if you have to give below command.
+
 `SELECT * FROM employee;`
 - here, `*` means getting all columns from `employee` table.
 
@@ -339,3 +340,12 @@ If you want to do it will be case sensitive then you have to add `binary` keywor
 
 `SELECT * FROM employee WHERE binary firstname='maneesh'`
 - now, you will get only such whose firstname is exactly `maneesh`.
+
+**ALIAS**
+- when we want to get column name as a different name we have to use `AS` keyword and it is called `ALIAS`.
+
+See this example:
+`SELECT firstname as name, lastname as surname FROM employee;`
+- it will show two column with `name` and `surname` respectively.
+
+![alias example](images/session4/alias.png)
