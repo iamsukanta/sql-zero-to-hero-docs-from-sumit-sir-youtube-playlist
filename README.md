@@ -370,6 +370,25 @@ We can give delete query below like this:
 
 **You have to be very careful when you will deal with `UPDATE` and `DELETE` command.**
 
+**ALTER**
+- deals with structure of the table, basically it updates the structure of the table.
+
+We can give alter command below like this:
+
+`ALTER TABLE employee ADD COLUMN jobtitle VARCHAR(50);`
+- this command will add a new column name `jobtitle` in employee table whose datatype will be will be `VARCHAR(50)`.
+
+`ALTER TABLE employee DROP COLUMN jobtitle VARCHAR(50);`
+- by this command we can delete column from `employee` table.
+
+`ALTER TABLE employee MODIFY COLUMN firstname VARCHAR(50);`
+- by this command it will modify firstname column data size to VARCHAR(50).
+
+`ALTER DROP employee PRIMARY KEY;`
+- it will drop primary key.
+
+
+
 **DDL**
 - Data Definitaion Language
 
