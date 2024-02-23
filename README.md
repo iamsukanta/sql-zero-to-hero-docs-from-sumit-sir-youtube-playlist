@@ -357,3 +357,12 @@ We can give update query below like this:
 `UPDATE employee SET lastname="sinha" WHERE firstname="Maneesh";`
 - it  will update lastname as `sinha` where firstname is `Maneesh`.
 - By `WHERE` condition we can update specific column.
+
+
+**DELETE**
+
+**DDL**
+- Data Definitaion Language
+
+**DML**
+- Data Manipulation Language
