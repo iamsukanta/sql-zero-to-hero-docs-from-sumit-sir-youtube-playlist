@@ -384,13 +384,29 @@ We can give alter command below like this:
 `ALTER TABLE employee MODIFY COLUMN firstname VARCHAR(50);`
 - by this command it will modify firstname column data size to VARCHAR(50).
 
-`ALTER DROP employee PRIMARY KEY;`
+`ALTER TABLE employee DROP PRIMARY KEY;`
 - it will drop primary key.
 
 
 
 **DDL**
 - Data Definitaion Language
+- deals with table structure
+- they do not manimulate the data
+- `CREATE`, `ALTER`, `DROP` - DDL Commands
 
 **DML**
 - Data Manipulation Language
+- deals with data directly
+- do not modify table structure
+- `INSERT`, `UPDATE`, `DELETE` - DML Commands
+
+**TRUNCATE**
+
+- it will drop table firstly, then recreate table again.
+- it is a `DDL` commands.
+- efficient when you want to delete all data from a table.
+
+**TRUNCATE vs DELETE**
+- `TRUNCATE` is a `DDL` command and `DELETE` is a DML command.
+- `DELETE` command delete data from table one by one, that's why it is slow operation whereas `TRUNCATE` delete the whole table and recreate table again.
