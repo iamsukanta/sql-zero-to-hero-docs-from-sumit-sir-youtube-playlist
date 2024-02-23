@@ -349,3 +349,11 @@ See this example:
 - it will show two column with `name` and `surname` respectively.
 
 ![alias example](images/session4/alias.png)
+
+**UPDATE**
+
+We can give update query below like this:
+
+`UPDATE employee SET lastname="sinha" WHERE firstname="Maneesh";`
+- it  will update lastname as `sinha` where firstname is `Maneesh`.
+- By `WHERE` condition we can update specific column.
