@@ -360,6 +360,15 @@ We can give update query below like this:
 
 
 **DELETE**
+We can give delete query below like this:
+
+`DELETE FROM employee WHERE id=1;`
+- By this command you will be able to delete data where id=2.
+
+-`DELETE FROM employee`.
+- it will delete all the data from `employee` table.
+
+**You have to be very careful when you will deal with `UPDATE` and `DELETE` command.**
 
 **DDL**
 - Data Definitaion Language
