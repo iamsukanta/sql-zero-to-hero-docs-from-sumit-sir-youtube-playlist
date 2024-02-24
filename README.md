@@ -410,3 +410,5 @@ We can give alter command below like this:
 **TRUNCATE vs DELETE**
 - `TRUNCATE` is a `DDL` command and `DELETE` is a DML command.
 - `DELETE` command delete data from table one by one, that's why it is slow operation whereas `TRUNCATE` delete the whole table and recreate table again.
+
+# Foreign key constraint: Session 5
