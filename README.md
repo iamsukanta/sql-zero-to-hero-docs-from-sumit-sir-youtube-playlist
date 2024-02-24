@@ -412,3 +412,27 @@ We can give alter command below like this:
 - `DELETE` command delete data from table one by one, that's why it is slow operation whereas `TRUNCATE` delete the whole table and recreate table again.
 
 # Foreign key constraint: Session 5
+
+ Suppose, there is no table in database. We will create a `students` table in `trendytech` database like this.
+
+ ```
+ CREATE TABLE students (
+  student_id INT PRIMARY KEY AUTO_INCREMENT,
+  student_fname VARCHAR(30) NOT NULL,
+  student_mname VARCHAR(30),
+  student_lname VARCHAR(30) NOT NULL,
+  student_email VARCHAR(30) NOT NULL UNIQUE KEY,
+  student_phone VARCHAR(15) NOT NULL,
+  enrollment_date TIMESTAMP NOT NULL,
+  years_of_exp INT NOT NULL,
+  student_company VARCHAR(30),
+  batch_date VARCHAR(30) NOT NULL,
+  source_of_joining VARCHAR(30) NOT NULL,
+  location VARCHAR(30) NOT NULL
+ );
+ ````
+We can see this table structure by this command:
+
+`DESC students;`
+
+![students table structure](images/session5/students_table_structure.png)
