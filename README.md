@@ -456,9 +456,36 @@ CREATE TABLE courses (
   course_duration_months INT NOT NULL,
   course_fee INT NOT NULL
 ); 
-````
+```
 Insert some course data by running below command:
 
 ```
 INSERT INTO courses(course_name, course_duration_months, course_fee) VALUES(1, 'big data', 6, 5000);
 ```
+
+Now we have to relation `students` table with `courses` table. We can update `students` by adding a `FOREIGN KEY` in `students` table like this.
+
+ ```
+ CREATE TABLE students (
+  student_id INT PRIMARY KEY AUTO_INCREMENT,
+  student_fname VARCHAR(30) NOT NULL,
+  student_mname VARCHAR(30),
+  student_lname VARCHAR(30) NOT NULL,
+  student_email VARCHAR(30) NOT NULL UNIQUE KEY,
+  student_phone VARCHAR(15) NOT NULL,
+  enrollment_date TIMESTAMP NOT NULL,
+  selected_course INT NOT NULL DEFAULT 1,
+  years_of_exp INT NOT NULL,
+  student_company VARCHAR(30),
+  batch_date VARCHAR(30) NOT NULL,
+  source_of_joining VARCHAR(30) NOT NULL,
+  location VARCHAR(30) NOT NULL,
+  FOREIGN KEY(selected_course) REFERENCES courses(course_id )
+ );
+
+ ``` 
+
+ - here, parent table is `courses` table and child table is `students` table.
+ - you cannot enter data in `selected_course` field which is not present in `courses` table in `course_id` field.
+ 
+
