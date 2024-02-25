@@ -455,5 +455,10 @@ CREATE TABLE courses (
   course_name VARCHAR(30) NOT NULL,
   course_duration_months INT NOT NULL,
   course_fee INT NOT NULL
-);
+); 
 ````
+Insert some course data by running below command:
+
+```
+INSERT INTO courses(course_name, course_duration_months, course_fee) VALUES(1, 'big data', 6, 5000);
+```
