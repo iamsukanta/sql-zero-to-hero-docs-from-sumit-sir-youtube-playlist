@@ -413,6 +413,10 @@ We can give alter command below like this:
 
 # Foreign key constraint: Session 5
 
+**A `Foreign Key` is a field in one table that refers to the primary key in another table.** 
+
+The table with the `foreign key` is called the child table, the table with `primary key` is called the parent table.
+
  Suppose, there is no table in database. We will create a `students` table in `trendytech` database like this.
 
  ```
@@ -487,5 +491,22 @@ Now we have to relation `students` table with `courses` table. We can update `st
 
  - here, parent table is `courses` table and child table is `students` table.
  - you cannot enter data in `selected_course` field which is not present in `courses` table in `course_id` field.
- 
 
+You cannot also `delete` course from `courses` table which `id` is related with `students` table because of `FOREIGN KEY` constrait.
+
+What is constraints?
+
+Constraints are used to limit the type of data that can go into a table.
+- This ensures the accuracy and reliability of the data is maintained. 
+- If there is any violation then the action is aborted.
+
+Some constraints:
+
+```
+NOT NULL
+UNIQUE KEY
+PRIMARY KEY
+FOREIGN KEY
+CHECK CONSTRAINT (not supported in mysql)
+
+```
