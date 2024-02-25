@@ -430,9 +430,19 @@ We can give alter command below like this:
   source_of_joining VARCHAR(30) NOT NULL,
   location VARCHAR(30) NOT NULL
  );
- ````
+
+ ```
 We can see this table structure by this command:
 
 `DESC students;`
 
 ![students table structure](images/session5/students_table_structure.png)
+
+Insert some data in `students` table by like this.
+
+```
+INSERT INTO students(student_fname, student_lname, student_email, student_phone, years_of_exp, student_company, batch_date, source_of_joining, location) VALUES('virat', 'kohli', 'virat@gmail.com', '9292929292', 3, 'flipkart', '5-02-2021', 'linkedin', 'hyderabad');
+
+```
+After inserting some data it will be like this:
+![Students table view](images/session5/students_table_view.png)
