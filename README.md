@@ -446,3 +446,14 @@ INSERT INTO students(student_fname, student_lname, student_email, student_phone,
 ```
 After inserting some data it will be like this:
 ![Students table view](images/session5/students_table_view.png)
+
+This table is good for single course. If there are multiple courses we have to introduce a new `courses` table.
+
+```
+CREATE TABLE courses (
+  course_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  course_name VARCHAR(30) NOT NULL,
+  course_duration_months INT NOT NULL,
+  course_fee INT NOT NULL
+);
+````
