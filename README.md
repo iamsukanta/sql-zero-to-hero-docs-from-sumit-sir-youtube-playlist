@@ -536,3 +536,25 @@ But if we give command like this, we will get duplicate free data.
 
 ![Distinct Results](images/session6/distinct_results.png)
 
+**ORDER BY**
+ - you can order data based on specific column.
+ - ordering can be done by two ways like Ascending and Descending order.
+  
+ If you want to ordering data by Descending order you have to use `DESC` keyword.
+
+ By default, ordering is done by Ascending and we can also use `AESC`.
+
+ For example:
+
+ `SELECT student_fname FROM students ORDER BY student_fname;`
+
+We can also do this by this command.
+
+ `SELECT student_fname FROM students ORDER BY years_of_exp;`
+ 
+ - this will also work, that means ordering column need not part of select statement.
+ - this will show student_fname such this way least experience student should be list on top and top experience student should be reside on the bottom.
+
+
+
+
