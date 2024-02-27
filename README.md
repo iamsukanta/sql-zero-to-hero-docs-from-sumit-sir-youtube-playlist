@@ -579,6 +579,23 @@ OR if we give command like this:
 
 `SELECT student_fname, years_of_exp FROM students ORDER BY years_of_exp, student_fname;`
 
-- first you will get results based on years_of_exp column and same years of experience student exist then it will sort again based on student_fname that means second level sorting.
+- first you will get results based on years_of_exp column and same years of experience student exist then it will order again based on student_fname that means second level ordering.
+
+**LIMIT**
+- this `LIMIT` keyword limit data as your given limit.
+
+For example:
+
+`SELECT * FROM students LIMIT 3;` 
+
+If you want to get 3 candidates with least experience, you can give like this command.
+
+`SELECT * FROM students ORDER BY years_of_exp LIMIT 3;`;
+
+If you want to get 3 candidates with highest experience, you can give command like this.
+
+`SELECT * FROM students ORDER BY years_of_exp DESC LIMIT 3;`;
+
+
 
 
