@@ -575,6 +575,10 @@ OR if we give command like this:
 - it will order based on years_of_exp column by ascending order.
 - here, 2 means second column.
 
+**If you give command like this:**
 
+`SELECT student_fname, years_of_exp FROM students ORDER BY years_of_exp, student_fname;`
+
+- first you will get results based on years_of_exp column and same years of experience student exist then it will sort again based on student_fname that means second level sorting.
 
 
