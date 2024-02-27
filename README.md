@@ -551,10 +551,15 @@ But if we give command like this, we will get duplicate free data.
 We can also do this by this command.
 
  `SELECT student_fname FROM students ORDER BY years_of_exp;`
- 
+
  - this will also work, that means ordering column need not part of select statement.
  - this will show student_fname such this way least experience student should be list on top and top experience student should be reside on the bottom.
 
+ If we give command like this: 
+
+`SELECT student_fname FROM students ORDER BY years_of_exp DESC;`
+
+-  it will give the results such way, whose years of experience is top most it will show first and least experience student show at the bottom.
 
 
 
