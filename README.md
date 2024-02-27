@@ -510,3 +510,29 @@ FOREIGN KEY
 CHECK CONSTRAINT (not supported in mysql)
 
 ```
+
+# Distinct, Order By, Limit, Like Keyword: Session 6
+
+Agenda:
+DISTINCT
+ORDER BY
+LIMIT
+LIKE
+
+**DISTINCT**
+ - remove redundancy & duplicate data.
+
+Suppose we want to see `location` from `students` table. We can give below command.
+
+`SELECT location FROM students;`
+
+It will give redundant data like this.
+
+![Redundant Results](images/session6/redundant_results.png)
+
+But if we give command like this, we will get duplicate free data.
+
+`SELECT DISTINCT location FROM students;`
+
+![Distinct Results](images/session6/distinct_results.png)
+
