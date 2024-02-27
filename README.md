@@ -561,5 +561,20 @@ We can also do this by this command.
 
 -  it will give the results such way, whose years of experience is top most it will show first and least experience student show at the bottom.
 
+Suppose if we give command like this:
+
+`SELECT student_fname, years_of_exp FROM students ORDER BY 1;`
+
+- it will order based on student_fname by ascending order.
+- here, 1 means first column.
+
+OR if we give command like this:
+
+`SELECT student_fname, years_of_exp FROM students ORDER BY 2;`
+
+- it will order based on years_of_exp column by ascending order.
+- here, 2 means second column.
+
+
 
 
