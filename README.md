@@ -608,6 +608,14 @@ You can give like query below this example:
 - `%` is a wildcard character
 
 
+`SELECT student_id, student_fname FROM students WHERE student_fname LIKE 'ra%';`
+
+- it will give all the student records whose first name starts with `ra`;
+
+`SELECT student_id, student_fname FROM students WHERE student_fname LIKE '%ra';`
+
+- it will give all the student records whose first name ends with `ra`;
+
 
 
 
