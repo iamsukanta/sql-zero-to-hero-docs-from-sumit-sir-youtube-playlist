@@ -596,6 +596,8 @@ If you want to get 3 candidates with highest experience, you can give command li
 
 `SELECT * FROM students ORDER BY years_of_exp DESC LIMIT 3;`;
 
+**LIKE KEYWORD**
+
 
 
 
