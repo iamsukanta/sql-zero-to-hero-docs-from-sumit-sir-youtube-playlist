@@ -597,6 +597,16 @@ If you want to get 3 candidates with highest experience, you can give command li
 `SELECT * FROM students ORDER BY years_of_exp DESC LIMIT 3;`;
 
 **LIKE KEYWORD**
+- is used for partial match.
+- it can match string start, end or middle.
+
+You can give like query below this example:
+
+`SELECT student_id, student_fname FROM students WHERE student_fname LIKE '%ra%';`
+
+- it will give all the results whose includes `ra`.
+- `%` is a wildcard character
+
 
 
 
