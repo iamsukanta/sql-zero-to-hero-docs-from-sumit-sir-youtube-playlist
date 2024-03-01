@@ -620,5 +620,18 @@ You can give like query below this example:
 
 # Order of execution in SQL
 
+`SELECT DISTINCT source_of_joining FROM students ORDER By enrollment_data DESC;`
 
+** DISTINCT & ORDER BY **
+
+Suppose we can discuss this query.
+
+`SELECT source_of_joining FROM students;`
+
+Order of execution
+------------------------------------
+------------------------------------
+
+FROM (LOADING THE TABLE)
+SELECT (PROJECTING source_of_joining)
 
