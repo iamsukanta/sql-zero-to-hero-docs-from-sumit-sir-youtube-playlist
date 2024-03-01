@@ -618,4 +618,7 @@ You can give like query below this example:
 
 
 
+# Order of execution in SQL
+
+
 
