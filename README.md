@@ -626,12 +626,15 @@ You can give like query below this example:
 
 Suppose we can discuss this query.
 
-`SELECT source_of_joining FROM students;`
+`SELECT source_of_joining, enrollment_date FROM students;`
 
 Order of execution
 ------------------------------------
 ------------------------------------
 
 FROM (LOADING THE TABLE)
-SELECT (PROJECTING source_of_joining)
+
+SELECT (PROJECTING source_of_joining, enrollment_date)
+
+`SELECT source_of_joining,enrollment_date FROM students ORBER BY
 
