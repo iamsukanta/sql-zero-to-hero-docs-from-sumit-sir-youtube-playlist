@@ -651,6 +651,14 @@ GROUP BY
 Decimel
 Timestamp
 
+# Logical Operators
+
+AND
+OR
+IN
+NOT IN
+BETWEEN
+NOT BETWEEN
 
 
 
