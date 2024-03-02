@@ -636,5 +636,18 @@ FROM (LOADING THE TABLE)
 
 SELECT (PROJECTING source_of_joining, enrollment_date)
 
-`SELECT source_of_joining,enrollment_date FROM students ORBER BY
+`SELECT source_of_joining,enrollment_date FROM students ORBER BY enrollment_date;` 
+
+
+# Aggregate Function
+
+MIN
+MAX
+AVG
+GROUP BY
+
+
+
+
+
 
