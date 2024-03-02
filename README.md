@@ -646,6 +646,11 @@ MAX
 AVG
 GROUP BY
 
+# More Datatypes
+
+Decimel
+Timestamp
+
 
 
 
