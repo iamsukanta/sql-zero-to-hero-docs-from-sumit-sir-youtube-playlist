@@ -673,6 +673,11 @@ FULL JOIN
 HAVING CLAUSE
 WHERE CLAUSE
 
+# Over Clause
+
+Over clause statement
+
+
 
 
 
