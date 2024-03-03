@@ -668,6 +668,12 @@ RIGHT JOIN
 FULL JOIN
 
 
+# Difference Between Where and Having Clause
+
+HAVING CLAUSE
+WHERE CLAUSE
+
+
 
 
 
