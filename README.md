@@ -677,6 +677,12 @@ WHERE CLAUSE
 
 Over clause statement
 
+# Row Number
+
+row_number() function
+
+# Rank and Dense Rank 
+
 
 
 
