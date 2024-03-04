@@ -681,6 +681,9 @@ Over clause statement
 
 row_number() function
 
+- it is appropriate when, there is no duplicate data.
+- you must have to use order by clause
+
 # Rank and Dense Rank 
 
 
