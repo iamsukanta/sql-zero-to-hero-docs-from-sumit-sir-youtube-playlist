@@ -667,6 +667,15 @@ Order of execution for this query
 Now, we will discuss why `DISTINCT` keyword not working in the above query.
 
 `SELECT DISTINCT source_of_joining FROM students ORBER BY enrollment_date;` 
+Order of execution for this query
+------------------------------------
+------------------------------------
+
+- FROM (LOADING THE TABLE) will be execute first.
+- SELECT (PROJECTING source_of_joining, enrollment_date) will be execute second.
+- DISTINCT (SELECT DISTINCT source_of_joining, enrollment_date from students)
+
+**Problems comes here. Finally, we want distinct `source_of_joining` data but system automaticall does distinct `source_of_joining` and `enrollment_date` data and this two results is not same. That's why system gives an error because data is not the same.**
 
 
 # Aggregate Function
