@@ -620,7 +620,7 @@ You can give like query below this example:
 
 # Order of execution in SQL
 
-`SELECT DISTINCT source_of_joining FROM students ORDER By enrollment_data DESC;`
+`SELECT DISTINCT source_of_joining FROM students ORDER By enrollment_date DESC;`
 
 ** DISTINCT & ORDER BY **
 
@@ -628,15 +628,25 @@ Suppose we can discuss this query.
 
 `SELECT source_of_joining, enrollment_date FROM students;`
 
-Order of execution
+Order of execution for this query
 ------------------------------------
 ------------------------------------
 
-FROM (LOADING THE TABLE)
+- FROM (LOADING THE TABLE) will be execute first.
 
-SELECT (PROJECTING source_of_joining, enrollment_date)
+- SELECT (PROJECTING source_of_joining, enrollment_date) will be execute second.
+
+Let's discuss about this below query:
 
 `SELECT source_of_joining,enrollment_date FROM students ORBER BY enrollment_date;` 
+
+Order of execution for this query
+------------------------------------
+------------------------------------
+
+- FROM (LOADING THE TABLE) will be execute first.
+- SELECT (PROJECTING source_of_joining, enrollment_date) will be execute second.
+- ORDER BY( based enrollment_date it will order by) will be execute third.
 
 
 # Aggregate Function
