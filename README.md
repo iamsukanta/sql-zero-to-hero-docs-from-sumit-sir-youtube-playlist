@@ -649,6 +649,26 @@ Order of execution for this query
 - ORDER BY( based enrollment_date it will order by) will be execute third.
 
 
+Let's discuss another query:
+
+`SELECT source_of_joining FROM students ORBER BY enrollment_date;` 
+
+Order of execution for this query
+------------------------------------
+------------------------------------
+
+**It's order of execution will be same as previous one. You might feel I am not selecting `enrollment_date` then, how system will filter `ORDER BY` based on `enrollment_date`. But our system is very intelligent he knows which column will be needed for filtering and based on this requirement he still projecting this column.**
+
+- FROM (LOADING THE TABLE) will be execute first.
+- SELECT (PROJECTING source_of_joining, enrollment_date) will be execute second.
+- ORDER BY( based enrollment_date it will order by) will be execute third.
+- System automatically discarded `enrollment_date` after filtering because we are not selecting `enrollment_date` column.
+
+Now, we will discuss why `DISTINCT` keyword not working in the above query.
+
+`SELECT DISTINCT source_of_joining FROM students ORBER BY enrollment_date;` 
+
+
 # Aggregate Function
 
 MIN
