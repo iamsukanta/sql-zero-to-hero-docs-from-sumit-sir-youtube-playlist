@@ -760,6 +760,14 @@ INSERT INTO courses_new VALUES('data science', 6, 30000);
 ```
 Here, `DECIMAL(3, 1)` data type means you can enter 3 digit before decimal point and after decimal point you will be able to enter 1 digit. For example, 234.5 is valid for this datatype but 45654.454 is not valid.
 
+*Timestamp Data Type*
+
+Suppose we want to add a new column which will automatically keep recode when new data is inserted. Look at this column definination:
+
+`change_at TIMESTAMP DEFAULT NOW()`
+
+
+
 # Logical Operators
 
 AND
