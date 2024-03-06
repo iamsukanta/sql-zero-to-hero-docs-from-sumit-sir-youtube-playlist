@@ -758,7 +758,7 @@ INSERT INTO courses_new VALUES('big data', 6.5, 50000);
 INSERT INTO courses_new VALUES('web development', 3.5, 20000);
 INSERT INTO courses_new VALUES('data science', 6, 30000);
 ```
-Here, first
+Here, `DECIMAL(3, 1)` data type means you can enter 3 digit before decimal point and after decimal point you will be able to enter 1 digit. For example, 234.5 is valid for this datatype but 45654.454 is not valid.
 
 # Logical Operators
 
