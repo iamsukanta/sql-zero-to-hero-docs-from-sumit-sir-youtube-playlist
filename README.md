@@ -679,11 +679,38 @@ Order of execution for this query
 
 
 # Aggregate Function
+- Input is all the lines, output is one lines.
 
+COUNT
 MIN
 MAX
 AVG
 GROUP BY
+
+**COUNT**
+
+We can count all the rows by this command.
+
+`SELECT COUNT(*) FROM students;`
+- it will count all the rows from students table.
+
+`SELECT COUNT(student_company) FROM students;`
+- it will give total number of student company.
+
+If we want to get `DISTINCT` or non duplicate company number then we can give this command.
+
+`SELECT COUNT(DISTINCT student_company) FROM students;`
+
+If we want to find students number whose batch date comes from `February or 02` month.
+
+`SELECT COUNT(*) FROM students WHERE batch_date LIKE '%-02-%';`
+
+**GROUP BY**
+
+- group data based on some conditions
+
+`SELECT source_of_joining, COUNT(*) FROM students GROUP BY source_of_joining;`
+- it will group by source_of_joining and give the number of source_of_joining.
 
 # More Datatypes
 
