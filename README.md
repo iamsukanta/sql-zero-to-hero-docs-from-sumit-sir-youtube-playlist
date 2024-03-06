@@ -708,9 +708,28 @@ If we want to find students number whose batch date comes from `February or 02` 
 **GROUP BY**
 
 - group data based on some conditions
+- by which column you want to group by this column should be in select statement otherwise it does not make sense.
+  
 
 `SELECT source_of_joining, COUNT(*) FROM students GROUP BY source_of_joining;`
 - it will group by source_of_joining and give the number of source_of_joining.
+
+**MIN & MAX**
+
+
+`SELECT MIN(years_of_exp) FROM students;`
+`SELECT MAX(years_of_exp) FROM students;`
+
+`SELECT source_of_joining, MAX(years_of_exp) FROM students GROUP BY source_of_joining;`
+
+
+**SUM**
+
+`SELECT source_of_joining, SUM(years_of_exp) FROM students GROUP BY source_of_joining;`
+
+**AVG**
+
+`SELECT source_of_joining, AVG(years_of_exp) FROM students GROUP BY source_of_joining;`
 
 # More Datatypes
 
