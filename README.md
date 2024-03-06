@@ -684,6 +684,7 @@ Order of execution for this query
 COUNT
 MIN
 MAX
+SUM
 AVG
 GROUP BY
 
@@ -730,6 +731,10 @@ If we want to find students number whose batch date comes from `February or 02` 
 **AVG**
 
 `SELECT source_of_joining, AVG(years_of_exp) FROM students GROUP BY source_of_joining;`
+
+We can do this by location basis.
+
+`SELECT student_company, AVG(years_of_exp) FROM students GROUP BY student_company;`
 
 # More Datatypes
 
