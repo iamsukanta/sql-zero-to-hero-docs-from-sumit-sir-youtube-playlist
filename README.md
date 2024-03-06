@@ -741,6 +741,25 @@ We can do this by location basis.
 Decimel
 Timestamp
 
+For decimal type:
+
+We will create a new table named `courses_new`.
+
+```
+CREATE TABLE courses_new (
+  course_id INT NOT NULL AUTO_INCREMENT,
+  course_name VARCHAR(30) NOT NULL,
+  course_duration_months DECIMAL(3,1) NOT NULL,
+  course_fee INT NOT NULL,
+  PRIMARY KEY(course_id)
+);
+
+INSERT INTO courses_new VALUES('big data', 6.5, 50000);
+INSERT INTO courses_new VALUES('web development', 3.5, 20000);
+INSERT INTO courses_new VALUES('data science', 6, 30000);
+```
+Here, first
+
 # Logical Operators
 
 AND
