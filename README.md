@@ -837,6 +837,22 @@ For achieving this results we can simply add `NOT` operator in above example.
 
 `SELECT * FROM students WHERE student_company NOT IN ('flipcart', 'amazon', 'microsoft');`
 
+CASE operator:
+- is used when you need derived column based on condition.
+
+Suppose, we want to get courses whose course_duration_months is greater than 4 months will be `masters` otherwise it will be `diploma`.
+
+We can do this based on this query:
+
+```
+SELECT course_id, course_name, course_fee,
+CASE
+  WHEN course_duration_months > 4 THEN 'masters'
+  ELSE 'diploma'
+END as course_type
+FROM courses;
+```
+
 
 # Join in SQL
 
