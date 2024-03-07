@@ -791,6 +791,33 @@ Match Data (LIKE query)
 
 `SELECT * FROM courses WHERE course_name LIKE '%data%';`
 
+Not Match Data (NOT LIKE query)
+
+`SELECT * FROM courses WHERE course_name NOT LIKE '%data%';`
+
+Multiple condition (AND)
+
+`SELECT * FROM students WHERE years_of_exp < 8 AND location = 'bangalore' AND source_of_joining = 'linkedin';`
+
+- by `AND` condition it will meet all condition if any condition fails you don't get any results
+
+OR condition:
+
+`SELECT * FROM students WHERE years_of_exp < 8 OR years_of_exp > 12;`
+
+- it will give all the student results whose experience is less than 8 or whose experience is greater than 12.
+
+BETWEEN operator: 
+
+`SELECT * FROM students WHERE years_of_exp BETWEEN 8 and 20;`
+
+- it will give the students whose years_of_exp between from 8 and 20;
+
+NOT BETWEEN operator:
+
+`SELECT * FROM  students WHERE years_of_exp NOT BETWEEN 8 and 20;`
+
+- it will give the students whose years_of_exp not between from 8 and 20.
 
 # Join in SQL
 
