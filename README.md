@@ -819,6 +819,25 @@ NOT BETWEEN operator:
 
 - it will give the students whose years_of_exp not between from 8 and 20.
 
+IN operator:
+
+Suppose, you want to get students whose company_name will be 'flipkart' or 'walmart' or 'microsoft'. We can do this by this command.
+
+`SELECT * FROM students WHERE student_company = 'flipcart' OR student_company = 'amazon' OR student_company = 'microsoft';`
+
+But we can do this by simpler way `IN` operator like this:
+
+`SELECT * FROM students WHERE student_company IN ('flipcart', 'amazon', 'microsoft');`
+
+NOT IN operator:
+
+If we want to get students who are not from `filpcart` or `amazon` or `microsoft` companies.
+
+For achieving this results we can simply add `NOT` operator in above example.
+
+`SELECT * FROM students WHERE student_company NOT IN ('flipcart', 'amazon', 'microsoft');`
+
+
 # Join in SQL
 
 INNER JOIN
