@@ -879,10 +879,23 @@ FROM students;
 # Join in SQL
 
 INNER JOIN
-LEFT JOIN
+LEFT OUTER JOIN
 RIGHT JOIN
 FULL JOIN
+CROSS JOIN
 
+**INNER JOIN**
+`SELECT students.student_fname, students.student_lname, courses.course_name FROM students JOIN courses ON students.selected_course = courses.course_id;`
+- by default JOIN will be `INNER JOIN`. It will give results like this:
+![Inner Join](images/session11/inner-join.png)
+- only the matching records will be in results, not matching records will be discards.
+
+**LEFT OUTER JOIN**
+- all the matching records are considered and all the non matching records in the left table which does not have the match in the right
+- 
+
+
+ 
 
 # Difference Between Where and Having Clause
 
