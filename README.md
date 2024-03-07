@@ -766,16 +766,31 @@ Suppose we want to add a new column which will automatically keep recode when ne
 
 `change_at TIMESTAMP DEFAULT NOW()`
 
+`change_at TIMESTAMP DEFAULT NOW() ON UPDATE NOW()`
+
 
 
 # Logical Operators
 
-AND
+AND 
 OR
 IN
 NOT IN
 BETWEEN
 NOT BETWEEN
+
+`=` or Equal Syntax
+
+`SELECT * FROM students WHERE location = 'bangalore';`
+
+`!=` or Not equal  Syntax
+
+`SELECT * FROM students WHERE location != 'bangalore';`
+
+Match Data (LIKE query)
+
+`SELECT * FROM courses WHERE course_name LIKE '%data%';`
+
 
 # Join in SQL
 
