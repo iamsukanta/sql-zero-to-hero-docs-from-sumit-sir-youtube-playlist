@@ -853,6 +853,28 @@ END as course_type
 FROM courses;
 ```
 
+Now, if you want to get students such that who is belong from 'flipcart', 'amazon' or 'google' is product based other wise it will be service based company.
+
+```
+SELECT student_id, student_fname, student_lname, student_company,
+CASE
+  WHEN student_company IN('flipcart', 'amazon', 'google') THEN 'product based'
+  ELSE 'service based'
+END as company_type
+FROM students;
+```
+We can add multiple condition like this.
+
+```
+SELECT student_id, student_fname, student_lname, student_company,
+CASE
+  WHEN student_company IN('flipcart', 'amazon', 'google') THEN 'product based'
+  WHEN student_company is NULL THEN 'Invalid Company'
+  ELSE 'service based'
+END as company_type
+FROM students;
+```
+
 
 # Join in SQL
 
