@@ -899,6 +899,9 @@ CROSS JOIN
 
 **FULL OUTER JOIN**
 - all the matching records are considered and all the non matching records in the right table which does not have the match in the left and all the non matching records in the left table which does not have the match in the right.
+
+**CROSS OUTER JOIN**
+- cross outer join.
  
 
 # Difference Between Where and Having Clause
