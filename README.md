@@ -906,6 +906,12 @@ CROSS JOIN
 HAVING CLAUSE
 WHERE CLAUSE
 
+**WHERE CLAUSE**
+- generally used before group by
+
+**HAVING CLAUSE**
+- generally used after group by
+
 # Over Clause
 
 Over clause statement
