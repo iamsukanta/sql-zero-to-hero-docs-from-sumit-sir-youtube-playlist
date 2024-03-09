@@ -940,6 +940,10 @@ WHERE VS HAVING clause.
 
 `SELECT source_of_joining, count(*) as total FROM students GROUP BY source_of_joining HAVING source_of_joining = 'Linkedin';`
 
+We can use both `WHERE` and `HAVING` in a same statement like this:
+
+`SELECT location, COUNT(*) as total FROM students WHERE years_of_exp > 5 GROUP BY location HAVING total > 1;`
+
 **If we can filter before aggregation with WHERE query it will be better performant.**
 
 # Over Clause
