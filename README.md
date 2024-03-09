@@ -891,14 +891,29 @@ CROSS JOIN
 - only the matching records will be in results, not matching records will be discards.
 
 **LEFT OUTER JOIN**
-- all the matching records are considered and all the non matching records in the left table which does not have the match in the right
+`SELECT students.students_id,students.students_fname, courses.courses_name FROM students LEFT JOIN courses ON student.selected_course = courses.course_id;`
+
+- all the matching records from the left and right table are considered and all the non matching records in the left table which does not have the match in the right padded with null.
 
 
 **RIGHT OUTER JOIN**
-- all the matching records are considered and all the non matching records in the right table which does not have the match in the left.
+
+`SELECT students.students_id,students.students_fname, courses.courses_name FROM students RIGHT JOIN courses ON student.selected_course = courses.course_id;`
+
+- all the matching records from left and right table are considered and all the non matching records in the right table which does not have the match in the left padded with null.
 
 **FULL OUTER JOIN**
-- all the matching records are considered and all the non matching records in the right table which does not have the match in the left and all the non matching records in the left table which does not have the match in the right.
+- all the matching records + non matching records from left + non matching records from right 
+
+MySQL does not support `FULL OUTER JOIN` that's why we are achieving same exact results by UNION.
+
+```
+SELECT students.students_id,students.students_fname, courses.courses_name FROM students LEFT JOIN courses ON student.selected_course = courses.course_id;
+
+UNION
+
+SELECT students.students_id,students.students_fname, courses.courses_name FROM students RIGHT JOIN courses ON student.selected_course = courses.course_id;
+```
 
 **CROSS OUTER JOIN**
 - cross outer join.
