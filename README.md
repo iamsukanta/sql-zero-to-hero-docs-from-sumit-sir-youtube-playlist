@@ -926,14 +926,21 @@ SELECT students.students_id,students.students_fname, courses.courses_name FROM s
 
 # Difference Between Where and Having Clause
 
-HAVING CLAUSE
-WHERE CLAUSE
+WHERE VS HAVING clause.
 
 **WHERE CLAUSE**
 - generally used before group by
+- is used to filter the individual records before aggregation.
+
+`SELECT source_of_joining, count(*) as total FROM students WHERE source_of_joining = 'linkedin' GROUP BY source_of_joining';`
 
 **HAVING CLAUSE**
 - generally used after group by
+- is used to filter the aggregation result.
+
+`SELECT source_of_joining, count(*) as total FROM students GROUP BY source_of_joining HAVING source_of_joining = 'Linkedin';`
+
+**If we can filter before aggregation with WHERE query it will be better performant.**
 
 # Over Clause
 
