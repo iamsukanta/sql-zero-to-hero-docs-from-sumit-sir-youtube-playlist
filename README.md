@@ -916,7 +916,12 @@ SELECT students.students_id,students.students_fname, courses.courses_name FROM s
 ```
 
 **CROSS OUTER JOIN**
-- cross outer join.
+- it will multiply left and right table records.
+- suppose, left table is 8 records and right table has 4 records then, it will give 32 records.
+- it is a very costly join.
+
+`SELECT * FROM students, courses;` OR `SELECT * FROM students JOIN courses;`
+
  
 
 # Difference Between Where and Having Clause
