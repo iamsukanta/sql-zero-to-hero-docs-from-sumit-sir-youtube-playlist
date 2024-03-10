@@ -948,6 +948,9 @@ We can use both `WHERE` and `HAVING` in a same statement like this:
 
 # Over Clause
 
+- is used to demonstrated non aggregated column with aggragated column.
+- is used with PARTITION BY column.
+
 Over clause statement
 
 # Row Number
@@ -956,6 +959,8 @@ row_number() function
 
 - it is appropriate when, there is no duplicate data.
 - you must have to use order by clause
+
+`SELECT firstname, lastname, salary, row_number() over (order by salary desc) FROM employee;;`
 
 # Rank and Dense Rank 
 
