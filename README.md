@@ -958,9 +958,11 @@ Over clause statement
 row_number() function
 
 - it is appropriate when, there is no duplicate data.
-- you must have to use order by clause
+- you must have to use order by clause 
 
-`SELECT firstname, lastname, salary, row_number() over (order by salary desc) FROM employee;;`
+`SELECT firstname, lastname, salary, row_number() over (order by salary desc) FROM employee;`
+
+`SELECT firstname, lastname, salary, row_number() over (order by salary desc) as rownum  FROM employee WHERE rownum=5;`
 
 # Rank and Dense Rank 
 
