@@ -959,6 +959,8 @@ row_number() function
 
 - it is appropriate when, there is no duplicate data.
 - you must have to use order by clause 
+- we can also use partition by (optional)
+- row number starts from 1 for every partition
 
 `SELECT firstname, lastname, salary, row_number() over (order by salary desc) FROM employee;`
 
@@ -975,7 +977,24 @@ Problem Statement: I want to find the highest salary getter at each location
 `SELECT * FROM (SELECT firstname, lastname, salary, location, row_number over(PARTITION BY location ORDER BY salary DESC) AS rownum FROM employee) AS temptable WHERE rownum = 1;`
 
 # Rank and Dense Rank 
+- like, row_number, you must have to use order by clause 
+- Like, row_number we can also use partition by with Rank and Dense Rank(optional)
+- row_number() function do not consider duplicates but Rank and Dense Rank do.
 
+**Rank**
+
+`SELECT firstname, lastname, salary, RANK() over (ORDER BY salary DESC) from employee;`
+- it will skip ranking where duplicates exist
+
+**Dense Rank**
+
+`SELECT firstname, lastname, salary, DENSE_RANK() over (ORDER BY salary DESC) from employee;`
+
+- it does not skip ranking where duplicates exist
+
+If there are no duplicates then row number, rank and dense rank lead to similar results.
+
+Only the difference comes when there are duplicates.
 
 
 
