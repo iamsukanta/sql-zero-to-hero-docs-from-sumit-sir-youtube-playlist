@@ -962,7 +962,17 @@ row_number() function
 
 `SELECT firstname, lastname, salary, row_number() over (order by salary desc) FROM employee;`
 
-`SELECT firstname, lastname, salary, row_number() over (order by salary desc) as rownum  FROM employee WHERE rownum=5;`
+Problem Statement: Finding the 5th highest salary
+
+`SELECT * FROM (SELECT firstname, lastname, salary, row_number() over (order by salary desc) as rownum  FROM employee) temptable WHERE rownum=5;`
+
+Problem Statement: to assign row number for partitions for each loaction.
+
+`SELECT firstname, lastname, salary, location, row_number over(PARTITION BY location ORDER BY salary DESC) FROM employee;`
+
+Problem Statement: I want to find the highest salary getter at each location
+
+`SELECT * FROM (SELECT firstname, lastname, salary, location, row_number over(PARTITION BY location ORDER BY salary DESC) AS rownum FROM employee) AS temptable WHERE rownum = 1;`
 
 # Rank and Dense Rank 
 
