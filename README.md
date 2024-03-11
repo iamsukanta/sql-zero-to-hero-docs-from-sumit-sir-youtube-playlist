@@ -996,7 +996,28 @@ If there are no duplicates then row number, rank and dense rank lead to similar 
 
 Only the difference comes when there are duplicates.
 
+Use Case:
+Suppose, there is some competition, I want to top 3 positions.  
 
+Marks and position should be in dense rank:
 
+```
+100  - 1
+100 - 1
+98 - 2
+97 - 3
+97 - 3
+96 - 4
+```
 
+or Marks and position should be in row number:
+
+```
+100  - 1
+100 - 2
+98 - 3
+97 - 4
+97 - 5
+96 - 6
+```
 
