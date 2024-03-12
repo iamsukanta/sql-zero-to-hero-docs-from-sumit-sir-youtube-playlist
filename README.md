@@ -1040,3 +1040,13 @@ Step 1: Find total orders each customer has placed.
 Step 2: Find Average orders
 
 Step 3: Find each customers who has placed more than average orders
+
+## Solution 1: (Subquery Approach)
+
+Step 1: Find total orders each customer has placed
+
+`SELECT order_customer_id, COUNT(*) as total_orders_per_customer FROM orders GROUP BY order_customer_id;`
+
+Step 2: Find Avarage orders
+
+`SELECT AVG()
