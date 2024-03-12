@@ -1021,3 +1021,9 @@ or Marks and position should be in row number:
 96 - 6
 ```
 
+# Advanced SQL Topics
+
+**CTE (Common Table Expression)**
+
+- CTE mainly use for code readability
+- sometimes it may be performance degradation
