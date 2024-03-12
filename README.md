@@ -1023,7 +1023,20 @@ or Marks and position should be in row number:
 
 # Advanced SQL Topics
 
-**CTE (Common Table Expression)**
+**CTE (Common Table Expression) || SQL WITH Clause**
 
+- is used to simplify complex quries
+- it improves the readability of a query
 - CTE mainly use for code readability
 - sometimes it may be performance degradation
+
+
+Problem statement:
+
+Total orders each customer has placed and find each customer who has placed more than average orders.
+
+Step 1: Find total orders each customer has placed.
+
+Step 2: Find Average orders
+
+Step 3: Find each customers who has placed more than average orders
