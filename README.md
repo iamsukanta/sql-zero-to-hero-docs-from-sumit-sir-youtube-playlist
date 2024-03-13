@@ -1065,4 +1065,9 @@ WITH total_orders(order_customer_id, total_orders_per_customer) AS (SELECT order
 SELECT AVG(total_orders_per_customer) AS avg_orders_per_customer FROM total_orders
 ```
 
+```
+WITH total_orders(order_customer_id, total_orders_per_customer) AS (SELECT order_customer_id, COUNT(*) as total_orders_per_customer FROM orders GROUP BY order_customer_id)
+SELECT AVG(total_orders_per_customer) AS avg_orders_per_customer FROM total_orders
+```
+
 # SQL internals | SQL Indexes 
