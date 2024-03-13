@@ -1049,4 +1049,20 @@ Step 1: Find total orders each customer has placed
 
 Step 2: Find Avarage orders
 
-`SELECT AVG()
+`SELECT AVG(total_orders_per_customer) as avg_orders_per_customer FROM (SELECT order_customer_id, COUNT(*) as total_orders_per_customer FROM orders GROUP BY order_customer_id) x;`
+
+Step 3: Find customers who placed order more than average orders
+
+
+
+
+## Solution 2: (CTE / With Clause)
+
+Step 1 and 2: 
+
+```
+WITH total_orders(order_customer_id, total_orders_per_customer) AS (SELECT order_customer_id, COUNT(*) as total_orders_per_customer FROM orders GROUP BY order_customer_id)
+SELECT AVG(total_orders_per_customer) AS avg_orders_per_customer FROM total_orders
+```
+
+# SQL internals | SQL Indexes 
