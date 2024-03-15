@@ -1218,8 +1218,8 @@ Output:
 
 **183. Customers Who Never Order**
 
+```
 Table: Customers
-
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -1238,6 +1238,7 @@ Table: Orders
 | id          | int  |
 | customerId  | int  |
 +-------------+------+
+
 id is the primary key (column with unique values) for this table.
 customerId is a foreign key (reference columns) of the ID from the Customers table.
 Each row of this table indicates the ID of an order and the ID of the customer who ordered it.
@@ -1248,8 +1249,6 @@ Write a solution to find all customers who never order anything.
 Return the result table in any order.
 
 The result format is in the following example.
-
- 
 
 Example 1:
 
@@ -1277,6 +1276,7 @@ Output:
 | Henry     |
 | Max       |
 +-----------+
+```
 
 **Solution:**
 
@@ -1295,9 +1295,8 @@ Table: Employee
 +-------------+------+
 id is the primary key (column with unique values) for this table.
 Each row of this table contains information about the salary of an employee.
-```
- 
-```
+
+
 Write a solution to find the second highest salary from the Employee table. If there is no second highest salary, return null (return None in Pandas).
 
 The result format is in the following example.
