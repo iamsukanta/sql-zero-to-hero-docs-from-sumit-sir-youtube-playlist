@@ -1282,10 +1282,11 @@ Output:
 
 `SELECT name AS Customers FROM Customers LEFT JOIN Orders ON Customers.id = Orders.customerId WHERE Orders.customerId IS null;`
 
+
 **176. Second Highest Salary**
 
+```
 Table: Employee
-
 +-------------+------+
 | Column Name | Type |
 +-------------+------+
@@ -1294,8 +1295,9 @@ Table: Employee
 +-------------+------+
 id is the primary key (column with unique values) for this table.
 Each row of this table contains information about the salary of an employee.
+```
  
-
+```
 Write a solution to find the second highest salary from the Employee table. If there is no second highest salary, return null (return None in Pandas).
 
 The result format is in the following example.
@@ -1332,6 +1334,7 @@ Output:
 +---------------------+
 | null                |
 +---------------------+
+```
 
 **Solution: 1 (With MAX aggregate function)**
 
