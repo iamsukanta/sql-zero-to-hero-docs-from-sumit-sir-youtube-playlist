@@ -101,8 +101,8 @@ CREATE TABLE trendytech.employee
 ```Learn SQL the right way - Session 2
 create - insert statements
 read - select statements
-create - update statements
-create - delete statements
+update - update statements
+delete - delete statements
 
 ```
 
