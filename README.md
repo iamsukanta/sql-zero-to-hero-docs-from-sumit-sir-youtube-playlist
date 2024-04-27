@@ -8,6 +8,8 @@ This is a SQL tutorial which is based on Sumit Sir youtube playlist. I think thi
 
 [4. Learn SQL the right way - Session 4](#learn-sql-the-right-way-session-4)
 
+[5. Foreign key constraint - Session 5](#foreign-key-constraint-session-5)
+
 # Getting started with SQL: Session 1
 ### What is database?
 - a collection of data and holds this data in the form of tables.
@@ -310,10 +312,13 @@ TRUNCATE VS DELETE
 
 CRUD Operations
 ---------------------------------------
+
+```
 CREATE - INSERT
 READ - SELECT
 UPDATE - UPDATE
 DELETE - DELETE
+```
 
 If you want to read all columns then if you have to give below command.
 
@@ -322,7 +327,7 @@ If you want to read all columns then if you have to give below command.
 
 If you want to get specific column you have to specify column name like this.
 `SELECT firstname, lastname FROM employee`
-- by this command you will get only firstname and lastname column from `employee` name.
+- by this command you will get only firstname and lastname column from `employee` table.
 
 **WHERE CLAUSE**
 - `WHERE` clause is used for filtering `rows` based on condition.
