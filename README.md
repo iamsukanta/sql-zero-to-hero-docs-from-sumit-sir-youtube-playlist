@@ -203,10 +203,13 @@ We can manually insert value as a `NULL` for a default value column like this.
 # Learn SQL the right way: Session 3
 
 Agenda:
+
+```
 PRIMARY KEY
 AUTO INCREMENT KEYS
 UNIQUE KEY
 PRIMARY KEYS vs UNIQUE KEYS
+```
 
 **PRIMARY KEY:**
 - used for uniquely identify a row from database.
