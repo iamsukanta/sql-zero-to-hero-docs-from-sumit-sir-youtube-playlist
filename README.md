@@ -12,7 +12,10 @@ This is a SQL tutorial which is based on Sumit Sir youtube playlist. I think thi
 
 [6. Distinct, Order By, Limit, Like Keyword: Session 6](#distinct-order-by-limit-like-keyword-session-6)
 
+[7. Order of execution in SQL: Session 7](#order-of-execution-in-SQL-session-7)
+
 # Getting started with SQL: Session 1
+
 ### What is database?
 - a collection of data and holds this data in the form of tables.
 ### what is table?
@@ -555,7 +558,7 @@ But if we give command like this, we will get duplicate free data.
   
  If you want to ordering data by Descending order you have to use `DESC` keyword.
 
- By default, ordering is done by Ascending and we can also use `AESC`.
+ By default, ordering is done by Ascending and we can also use `ASC`.
 
  For example:
 
@@ -565,7 +568,7 @@ We can also do this by this command.
 
  `SELECT student_fname FROM students ORDER BY years_of_exp;`
 
- - this will also work, that means ordering column need not part of select statement.
+ - this will also work, that means ordering column doesn't need part of select statement.
  - this will show student_fname such this way least experience student should be list on top and top experience student should be reside on the bottom.
 
  If we give command like this: 
@@ -631,7 +634,7 @@ You can give like query below this example:
 
 
 
-# Order of execution in SQL
+# Order of execution in SQL: Session 7
 
 `SELECT DISTINCT source_of_joining FROM students ORDER By enrollment_date DESC;`
 
