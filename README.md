@@ -645,20 +645,18 @@ Suppose we can discuss this query.
 `SELECT source_of_joining, enrollment_date FROM students;`
 
 Order of execution for this query
-------------------------------------
-------------------------------------
 
 - FROM (LOADING THE TABLE) will be execute first.
 
 - SELECT (PROJECTING source_of_joining, enrollment_date) will be execute second.
+
+Projection means what columns we want to show.
 
 Let's discuss about this below query:
 
 `SELECT source_of_joining,enrollment_date FROM students ORBER BY enrollment_date;` 
 
 Order of execution for this query
-------------------------------------
-------------------------------------
 
 - FROM (LOADING THE TABLE) will be execute first.
 - SELECT (PROJECTING source_of_joining, enrollment_date) will be execute second.
@@ -670,10 +668,8 @@ Let's discuss another query:
 `SELECT source_of_joining FROM students ORBER BY enrollment_date;` 
 
 Order of execution for this query
-------------------------------------
-------------------------------------
 
-**It's order of execution will be same as previous one. You might feel I am not selecting `enrollment_date` then, how system will filter `ORDER BY` based on `enrollment_date`. But our system is very intelligent he knows which column will be needed for filtering and based on this requirement he still projecting this column.**
+***It's order of execution will be same as previous one. You might feel I am not selecting `enrollment_date` then, how system will filter `ORDER BY` based on `enrollment_date`. But our system is very intelligent he knows which column will be needed for filtering and based on this requirement he still projecting this column.***
 
 - FROM (LOADING THE TABLE) will be execute first.
 - SELECT (PROJECTING source_of_joining, enrollment_date) will be execute second.
@@ -683,15 +679,14 @@ Order of execution for this query
 Now, we will discuss why `DISTINCT` keyword not working in the above query.
 
 `SELECT DISTINCT source_of_joining FROM students ORBER BY enrollment_date;` 
+
 Order of execution for this query
-------------------------------------
-------------------------------------
 
 - FROM (LOADING THE TABLE) will be execute first.
 - SELECT (PROJECTING source_of_joining, enrollment_date) will be execute second.
 - DISTINCT (SELECT DISTINCT source_of_joining, enrollment_date from students)
 
-**Problems comes here. Finally, we want distinct `source_of_joining` data but system automaticall does distinct `source_of_joining` and `enrollment_date` data and this two results is not same. That's why system gives an error because data is not the same.**
+***Problems comes here. Finally, we want distinct `source_of_joining` data but system automatically  distinct `source_of_joining` and `enrollment_date` combination data and this two results is not same. That's why system gives an error because data is not the same.***
 
 
 # Aggregate Function
