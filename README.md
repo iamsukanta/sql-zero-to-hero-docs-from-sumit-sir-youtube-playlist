@@ -10,6 +10,8 @@ This is a SQL tutorial which is based on Sumit Sir youtube playlist. I think thi
 
 [5. Foreign key constraint - Session 5](#foreign-key-constraint-session-5)
 
+[6. Distinct, Order By, Limit, Like Keyword: Session 6](#distinct-order-by-limit-like-keyword-session-6)
+
 # Getting started with SQL: Session 1
 ### What is database?
 - a collection of data and holds this data in the form of tables.
@@ -522,10 +524,13 @@ CHECK CONSTRAINT (not supported in mysql)
 # Distinct, Order By, Limit, Like Keyword: Session 6
 
 Agenda:
+
+```
 DISTINCT
 ORDER BY
 LIMIT
 LIKE
+```
 
 **DISTINCT**
  - remove redundancy & duplicate data.
