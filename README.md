@@ -14,6 +14,8 @@ This is a SQL tutorial which is based on Sumit Sir youtube playlist. I think thi
 
 [7. Order of execution in SQL: Session 7](#order-of-execution-in-SQL-session-7)
 
+[8. Aggregate Function (COUNT, MIN, MAX, SUM, GROUP BY): Session 8](#aggregate-function-count-min-max-sum-group-by-session-8)
+
 # Getting started with SQL: Session 1
 
 ### What is database?
@@ -689,15 +691,17 @@ Order of execution for this query
 ***Problems comes here. Finally, we want distinct `source_of_joining` data but system automatically  distinct `source_of_joining` and `enrollment_date` combination data and this two results is not same. That's why system gives an error because data is not the same.***
 
 
-# Aggregate Function
+# Aggregate Function (COUNT, MIN, MAX, SUM, GROUP BY): Session 8
 - Input is all the lines, output is one lines.
 
+```
 COUNT
 MIN
 MAX
 SUM
 AVG
 GROUP BY
+```
 
 **COUNT**
 
